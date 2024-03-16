@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F5">
+
+    <TextView
+        android:id="@+id/tvNamaApp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#651111"
+        android:paddingLeft="20dp"
+        android:paddingTop="19dp"
+        android:text="Raja Allifin Muhammad Quiz 1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembeli"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaApp" />
+
+    <TextView
+        android:id="@+id/tvMembership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member"
+        android:textSize="16sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNama" />
+
+
+    <LinearLayout
+        android:id="@+id/llDeskripsiTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMembership">
+
+        <TextView
+            android:id="@+id/tvKodeBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode Barang: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvNamaBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Harga: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvDiskon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskon: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvDiskonMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskon Member: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvJumlahBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran :"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPenutup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Thankyou Brooo!!!!!!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llDeskripsiTransaksi"/>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Share"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:backgroundTint="#6420AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPenutup"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
